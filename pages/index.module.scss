@@ -1,0 +1,70 @@
+.wrapper {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: black;
+    box-sizing: border-box;
+
+    .image {
+        height: calc(100vh + 40px) !important;
+        width: calc(100vw + 40px) !important;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.5;
+    }
+
+    .content {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        z-index: 2;
+        padding: 100px;
+
+        .title {
+            width: 580px;
+            margin-left: 560px;
+            font-size: 36px;
+            font-weight: semi-bold;
+            line-height: 50px;
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        .boxWrapper {
+            position: absolute;
+            right: 50px;
+            bottom: 0;
+            background: #f5f5f5;
+            transition: height 0.5s ease-in;
+            border-radius: 5px 5px 0 0;
+
+            .login {
+                padding: 40px;
+
+                .header {
+                    font-size: 32px;
+                    margin-bottom: 50px;
+                }
+
+                .button {
+                    background-color: #1d1d1d;
+                    color: #f5f5f5;
+                    width: 300px;
+                    padding: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transform: scale(1);
+                    transition: all 0.3s ease-in;
+                    border-radius: 5px;
+
+                    &:hover {
+                        transform: scale(1.02);
+                    }
+                }
+            }
+        }
+    }
+}
